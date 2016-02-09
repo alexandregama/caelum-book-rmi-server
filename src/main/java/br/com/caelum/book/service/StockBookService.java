@@ -1,4 +1,4 @@
-package br.com.caelum.book;
+package br.com.caelum.book.service;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -9,7 +9,7 @@ public class StockBookService extends UnicastRemoteObject implements StockBook {
 	
 	private BooksDao dao = new BooksDao();
 	
-	protected StockBookService() throws RemoteException {
+	public StockBookService() throws RemoteException {
 		super();
 	}
 

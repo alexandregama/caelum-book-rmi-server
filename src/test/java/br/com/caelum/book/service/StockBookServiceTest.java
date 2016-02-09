@@ -1,8 +1,11 @@
-package br.com.caelum.book;
+package br.com.caelum.book.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import br.com.caelum.book.service.Book;
+import br.com.caelum.book.service.StockBookService;
 
 public class StockBookServiceTest {
 

@@ -1,4 +1,4 @@
-package br.com.caelum.book;
+package br.com.caelum.book.service;
 
 import java.util.HashMap;
 import java.util.Map;

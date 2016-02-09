@@ -1,4 +1,4 @@
-package br.com.caelum.book;
+package br.com.caelum.book.service;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
