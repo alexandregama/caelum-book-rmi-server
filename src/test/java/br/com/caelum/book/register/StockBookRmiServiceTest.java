@@ -13,7 +13,7 @@ public class StockBookRmiServiceTest {
 
 	@Test
 	public void shouldRemoveABookUsingRMI() throws Exception {
-		StockBook service = (StockBook) Naming.lookup("rmi://127.0.0.1:1099/stockservice");
+		StockBook service = (StockBook) Naming.lookup("rmi://localhost:1099/stockservice");
 		
 		service.removeByCode("SOA");
 		

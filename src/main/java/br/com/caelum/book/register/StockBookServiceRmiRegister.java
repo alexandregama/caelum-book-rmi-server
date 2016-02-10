@@ -11,6 +11,9 @@ import br.com.caelum.book.service.StockBookService;
 public class StockBookServiceRmiRegister {
 
 	public static void main(String[] args) throws RemoteException, MalformedURLException, AlreadyBoundException {
+		System.setProperty("java.security.policy", "/Users/alexandregama/developer/java/workspace/caelum-book-rmi-server/java.policy");
+		System.setSecurityManager(new SecurityManager());
+		
 		LocateRegistry.createRegistry(1099);
 		Naming.bind("/stockservice", new StockBookService());
 		

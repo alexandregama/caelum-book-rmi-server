@@ -15,11 +15,13 @@ public class StockBookService extends UnicastRemoteObject implements StockBook {
 
 	@Override
 	public void removeByCode(String code) throws RemoteException {
+		System.out.println("******* SERVER - Removing book from code " + code + " ******* SERVER");
 		dao.removeByCode(code);
 	}
 
 	@Override
 	public Book findBy(String code) throws RemoteException {
+		System.out.println("******* SERVER - Finding book from code " + code + " ******* SERVER");
 		Book book = dao.findBy(code);
 		
 		return book;
